@@ -1,3 +1,5 @@
+///Um array (ou vetor) é uma estrutura de dados fundamental usada para armazenar uma coleção ordenada de elementos (valores ou objetos) em uma única variável.
+
 const friends = ['Marcos', 'Sofia', 'Diego', 'Valentina', 'Matias'];
 const num = [1, 2, 3, 4, 5];
 
@@ -52,13 +54,54 @@ console.log(final)  //mostra o item removido
 let num4 = [23, 24, 25, 26, 27];
 
 //num4 []
+
 num4.splice(0, num4.length)
 
 console.log(num4)
 
 
-////
+////concatenando uma array
+
+let numbers = [28, 29, 30, 50, 90];
+let letters = ['a', 'b', 'c'];
+
+all = numbers.concat(letters)
+half = all.slice(3, 5)
+
+console.log(all)
+console.log(half)
+
+///Join array 
+
+let clients = ['Alice', 'Bob', 'Charlie'];
+
+console.log(clients)
+
+let clientsJoins = clients.join(', ')
+
+console.log(clientsJoins)
+
+///Reverse array
+
+let colors = ['red', 'green', 'blue', 'yellow', 'purple'];
+
+colors.sort() //ordena a array em ordem alfabética
+console.log(colors)
+
+let colors2 = ['red', 'green', 'blue', 'yellow', 'purple'];
+
+colors2.reverse() //inverte a ordem dos itens da array
+console.log(colors2)
+
+///Verificando elementos em uma array
+
+const tempLondon = [15, 17, 20, 22, 25];
+
+const tempPositive = tempLondon.every(function(value) {
+    return value > 0;
+}); //verifica se todos os itens da array são maiores que 0
+
+console.log(tempPositive);
 
 
-
-
+/// Filtrando uma array com filter
