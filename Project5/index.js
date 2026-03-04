@@ -103,5 +103,10 @@ const tempPositive = tempLondon.every(function(value) {
 
 console.log(tempPositive);
 
+const tempLondon2 = [15, 17, 20, 22, 25];
 
-/// Filtrando uma array com filter
+const tempPositive2 = tempLondon2.filter(function(value) {
+    return value > 0;
+}); //filtra os itens da array que são maiores que 0 e retorna uma nova array com esses itens
+
+console.log(tempPositive2);
