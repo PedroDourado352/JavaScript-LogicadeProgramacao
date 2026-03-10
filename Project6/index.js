@@ -28,6 +28,10 @@ function price(a, b) {
 
 console.log(price(10, 20, 10, 20));
 
+///parametros default
 
+function carLoan(loan, rate, years) {
+    return loan * (rate / 100) * years; 
+}
 
-
+console.log(carLoan(10000, 5, 3));
