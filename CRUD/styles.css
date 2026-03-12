@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f3f4f6;
+	color: #111827;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.card {
+	width: 100%;
+	max-width: 760px;
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	padding: 1.5rem;
+}
+
+h1 {
+	margin: 0 0 1rem;
+	font-size: 1.6rem;
+}
+
+.form {
+	display: grid;
+	gap: 0.8rem;
+	margin-bottom: 1.2rem;
+}
+
+.field label {
+	display: block;
+	margin-bottom: 0.35rem;
+	font-weight: 600;
+}
+
+.field input {
+	width: 100%;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	padding: 0.7rem;
+	font-size: 1rem;
+}
+
+.field input:focus {
+	outline: 2px solid #2563eb;
+	border-color: transparent;
+}
+
+.actions {
+	display: flex;
+	gap: 0.6rem;
+}
+
+button {
+	border: none;
+	border-radius: 8px;
+	padding: 0.7rem 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+#submitButton {
+	background: #2563eb;
+	color: #ffffff;
+}
+
+.secondary {
+	background: #e5e7eb;
+	color: #111827;
+}
+
+.danger {
+	background: #dc2626;
+	color: #ffffff;
+}
+
+.edit {
+	background: #0f766e;
+	color: #ffffff;
+}
+
+.hidden {
+	display: none;
+}
+
+.table-wrapper {
+	overflow-x: auto;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 0.7rem;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+td.actions-cell {
+	white-space: nowrap;
+}
+
+td.actions-cell button {
+	margin-right: 0.4rem;
+}

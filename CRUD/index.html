@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD com JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <main class="container">
+        <section class="card">
+            <h1>CRUD de Usuários</h1>
 
+            <form id="userForm" class="form">
+                <input type="hidden" id="userId">
+
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Digite o nome" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite o e-mail" required>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" id="submitButton">Adicionar</button>
+                    <button type="button" id="cancelEditButton" class="secondary hidden">Cancelar edição</button>
+                </div>
+            </form>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
     <script src="index.js"></script>
 </body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card" aria-labelledby="tip-calculator-title">
+            <h1 id="tip-calculator-title">Tip Calculator</h1>
+
+            <div class="field">
+                <label for="billAmount">Bill amount ($)</label>
+                <input id="billAmount" type="number" min="0" step="0.01" placeholder="0.00">
+            </div>
+
+            <div class="field">
+                <label for="tipPercentage">Tip percentage (%)</label>
+                <input id="tipPercentage" type="number" min="0" step="1" placeholder="10">
+            </div>
+
+            <div class="field">
+                <label for="numberOfPeople">Number of people</label>
+                <input id="numberOfPeople" type="number" min="1" step="1" placeholder="1">
+                <small id="peopleError" class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="actions">
+                <button id="calculateButton" type="button">Calculate</button>
+                <button id="resetButton" type="button" class="secondary">Reset</button>
+            </div>
+
+            <section class="result" aria-live="polite">
+                <div class="result-item">
+                    <span>Tip amount per person</span>
+                    <strong id="tipPerPerson">$0.00</strong>
+                </div>
+                <div class="result-item">
+                    <span>Total per person</span>
+                    <strong id="totalPerPerson">$0.00</strong>
+                </div>
+                <div class="result-item">
+                    <span>Total tip</span>
+                    <strong id="totalTip">$0.00</strong>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
